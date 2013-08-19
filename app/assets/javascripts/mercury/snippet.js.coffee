@@ -74,7 +74,7 @@ class @Mercury.Snippet
   getHTML: (context, callback = null) ->
     element = jQuery("<#{@wrapperTag}>", {
       class: "#{@name}-snippet"
-      contenteditable: "false"
+      contenteditable: "true"
       'draggable': "true"
       'data-snippet': @identity
       'data-snippet_options': JSON.stringify(@options)

@@ -75,9 +75,7 @@ class @Mercury.Snippet
     elementClass += " #{@wrapperClass}" if @wrapperClass
     element = jQuery("<#{@wrapperTag}>", {
       class: elementClass
-      contenteditable: "false"
-      'data-snippet': @identity
-      'data-version': @version
+      contenteditable: "true"
     }, context)
     element.html("[#{@identity}]")
     @loadPreview(element, callback)

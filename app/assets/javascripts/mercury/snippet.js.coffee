@@ -76,9 +76,6 @@ class @Mercury.Snippet
       class: "#{@name}-snippet"
       contenteditable: "true"
       'draggable': "true"
-      'data-snippet': @identity
-      'data-snippet_options': JSON.stringify(@options)
-      'data-snippet_version': @version
     }, context)
     element.html("[#{@identity}]")
     @loadPreview(element, callback)
